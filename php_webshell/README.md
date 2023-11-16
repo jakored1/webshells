@@ -39,8 +39,9 @@ python3 client.py -u http://example.com/webshell.php -t exec -p "ls" -e passthru
 Passing your own php code to be executed:
 ```sh
 # adding the -v (--verify) flag, will show you details of the request that you are about to send to the webshell.
-# if you are passing a complex php code, it might be worth validating it before sending (-v is available with all types, not only 'eval')
-python3 client.py -u http://example.com/webshell.php -t eval -p 'echo("test")'
+# if you are passing a complex php code, it might be worth validating it before sending
+# (-v is available with all types, not only 'eval')
+python3 client.py -u http://example.com/webshell.php -t eval -p 'echo("test")' -v
 ```
 Get current working directory:
 ```sh
