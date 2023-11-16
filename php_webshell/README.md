@@ -49,8 +49,8 @@ python3 client.py -u http://example.com/webshell.php -t pwd
 ```
 List files in a given path (like ls):
 ```sh
-# if the given path is not a valid directory the webshell will tell you
-# this lists hidden files/directories as well
+# if the given path is not a directory on the target machine, the webshell will tell you.
+# this function also lists hidden files and directories
 python3 client.py -u http://example.com/webshell.php -t dir -p "/home/user/"
 ```
 Read file contents:
