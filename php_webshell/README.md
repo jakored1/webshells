@@ -4,7 +4,7 @@
 2. The webshell.php might not work great on windows machines, simply because I haven't tested it. Once I do I will update the code :)
 
 ## Let's Begin!
-So as you will see there are 2 parts to this webshell:
+So as you see there are 2 parts to this webshell:
 1. webshell.php - The webshell that you upload
 2. client.py - The python3 utility you use to interact with webshell.php after it's been uploaded
 
