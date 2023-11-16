@@ -64,6 +64,7 @@ python3 client.py -u http://example.com/webshell.php -t cat -p "/etc/passwd" --p
 - The webshell only uses POST requests, as GET requests are often better logged.  
 - When executing commands we do it like this `bash -c 'exec 2>&1 COMMAND'`, to make sure errors get piped back to us. This is meant to allow us to see errors that might occur, and also makes sure that errors that occur are not shown in log files.
 - The entire webshell (aside from the 'exec' type) uses eval(). This means we are not opening new processes on the target, therefore arrousing less suspicion.
+- The client side uses a random user agent for each request.
 - Stuff relating to obfuscation, size and last edited time of the uploaded webshell, I leave for you to do alone and research online :) 
 ## Future Plans
 I want to add an upload/download file feature, might get to that later  
