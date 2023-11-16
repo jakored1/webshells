@@ -21,7 +21,7 @@ All it does is eval the php code given to it via a POST request.
 Using this kind of shell is a bit annoying, which is why the `client.py` was created.  
 The client side takes care of converting your commands to php code and passing them to the webshell.  
 It also has other functions that allow you to interact with the target via the webshell that don't require executing commands on the system  
-(opening new processes / executing commands via a webshell isn't very stealthy).  
+(opening new processes and executing commands via a webshell isn't very stealthy).  
 ## Usage
 ```
 python3 client.py --help
